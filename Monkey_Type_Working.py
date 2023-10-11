@@ -26,6 +26,6 @@ while len(driver.find_elements(By.CLASS_NAME, "word")) != 0:
     letters = [letter.text for letter in active_word.find_elements(By.TAG_NAME, "letter")] + [' ']
     print(letters)
     keyboard.type(letters)
-    #sleep(0.02)
+    sleep(0.02)
 sleep(100)
 print('done!')
